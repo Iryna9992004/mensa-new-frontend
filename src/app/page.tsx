@@ -2,6 +2,7 @@ import AboutSection from "@/widgets/about-section/AboutSection";
 import CatalogSection from "@/widgets/catalog-section/CatalogSection";
 import Footer from "@/widgets/footer/Footer";
 import NavBar from "@/widgets/navbar/NavBar";
+import PaymentSection from "@/widgets/payment-section/PaymentSection";
 import { Box, Typography } from "@mui/material";
 
 export default function Home() {
@@ -21,18 +22,16 @@ export default function Home() {
           }}
         >
           <Typography
-            variant="h2"
+            variant="h1"
             sx={{ fontWeight: 500, color: "white", textAlign: "center" }}
           >
             MENSA CANDLES
           </Typography>
         </Box>
       </Box>
-
-      
-        
       <AboutSection />
-       <CatalogSection />
+      <CatalogSection />
+      <PaymentSection />
       <Footer />
     </Box>
   );

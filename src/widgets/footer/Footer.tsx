@@ -1,11 +1,11 @@
 import { Box, Grid, Typography } from "@mui/material";
 import Image from "next/image";
 
-import picture1 from "../../public/assets/langing/pictures/1.jpg";
-import picture2 from "../../public/assets/langing/pictures/2.jpg";
-import picture3 from "../../public/assets/langing/pictures/3.jpg";
+import picture1 from "../../../public/assets/langing/pictures/1.jpg";
+import picture2 from "../../../public/assets/langing/pictures/2.jpg";
+import picture3 from "../../../public/assets/langing/pictures/3.jpg";
 
-import instaPhoto1 from "../../public/assets/langing/instagram/1 (1).jpg";
+import instaPhoto1 from "../../../public/assets/langing/instagram/1 (1).jpg";
 
 const Footer = () => {
   return (
@@ -43,7 +43,7 @@ const Footer = () => {
         </Grid>
         <Grid item xs={6} sm={6} md={6} lg={6}>
           <Grid container>
-            <Grid item xs={6} sm={6} md={6} lg={6}>
+            <Grid item xs={12} sm={12} md={6} lg={6}>
               <Box sx={{ display: "flex", flexDirection: "column", gap: 3 }}>
                 <Typography component="h3" sx={{ fontWeight: 300 }}>
                   PICTURES
@@ -72,7 +72,14 @@ const Footer = () => {
                 </Box>
               </Box>
             </Grid>
-            <Grid item xs={6} sm={6} md={6} lg={6}>
+            <Grid
+              item
+              xs={6}
+              sm={6}
+              md={6}
+              lg={6}
+              sx={{ display: { xs: "none", sm: "none", md: 'block', lg: 'block' } }}
+            >
               <Box sx={{ display: "flex", flexDirection: "column", gap: 3 }}>
                 <Typography component="h3" sx={{ fontWeight: 300 }}>
                   INSTAGRAM
