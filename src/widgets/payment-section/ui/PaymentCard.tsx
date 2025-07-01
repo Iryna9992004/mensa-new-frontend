@@ -1,9 +1,14 @@
 import { Box, Typography } from "@mui/material";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-import image from "../../../../public/assets/langing/pictures/1.jpg";
+type Props = {
+  image: StaticImageData;
+  alt: string;
+  number: string;
+  description: string;
+}
 
-const PaymentCard = () => {
+const PaymentCard = ({image, alt, number, description}: Props) => {
   return (
     <Box
       sx={{
@@ -14,7 +19,7 @@ const PaymentCard = () => {
       }}
     >
       <Box sx={{ position: "relative" }}>
-        <Image src={image} alt="delivery" style={{width: '100%', height: '100%', minWidth: 250}}/>
+        <Image src={image} alt={alt} style={{width: '100%', height: '100%', minWidth: 250}}/>
         <Box
           sx={{
             bgcolor: "#A6DFD3",
@@ -29,17 +34,12 @@ const PaymentCard = () => {
           }}
         >
           <Typography variant="h4" sx={{ color: "white" }}>
-            1
+            {number}
           </Typography>
         </Box>
       </Box>
       <Typography component="span" sx={{ color: "gray" }}>
-        Карта Приватбанку. 100% передоплата на карту Приватбанку. У цьому
-        випадку ви не оплачуєте комісію за накладений платіж. Післяплата. Ви
-        можете оплатити замовлення при отриманні на пошті (накладений платіж).
-        Ця послуга коштує дорожче звичайного відправлення, тому що Ви додатково
-        сплачуєте комісію за повернення грошових коштів відправнику (20 грн. +
-        2% від суми замовлення).
+        {description}
       </Typography>
     </Box>
   );

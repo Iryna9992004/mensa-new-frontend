@@ -7,6 +7,60 @@ import picture3 from "../../../public/assets/langing/pictures/3.jpg";
 
 import instaPhoto1 from "../../../public/assets/langing/instagram/1 (1).jpg";
 
+const pictures = [
+  {
+    picture: picture1,
+    alt: "picture 1",
+  },
+  {
+    picture: picture2,
+    alt: "picture 2",
+  },
+  {
+    picture: picture3,
+    alt: "picture 3",
+  },
+];
+
+const instagramPictures = [
+  {
+    picture: instaPhoto1,
+    alt: "insta photo 1",
+  },
+  {
+    picture: instaPhoto1,
+    alt: "insta photo 2",
+  },
+  {
+    picture: instaPhoto1,
+    alt: "insta photo 3",
+  },
+  {
+    picture: instaPhoto1,
+    alt: "insta photo 4",
+  },
+  {
+    picture: instaPhoto1,
+    alt: "insta photo 5",
+  },
+  {
+    picture: instaPhoto1,
+    alt: "insta photo 6",
+  },
+  {
+    picture: instaPhoto1,
+    alt: "insta photo 7",
+  },
+  {
+    picture: instaPhoto1,
+    alt: "insta photo 8",
+  },
+  {
+    picture: instaPhoto1,
+    alt: "insta photo 9",
+  },
+];
+
 const Footer = () => {
   return (
     <Box
@@ -51,24 +105,15 @@ const Footer = () => {
                 <Box
                   sx={{ display: "flex", flexDirection: "column", gap: "1rem" }}
                 >
-                  <Image
-                    src={picture1}
-                    alt="present1"
-                    height="75"
-                    width="120"
-                  />
-                  <Image
-                    src={picture2}
-                    alt="present2"
-                    height="75"
-                    width="120"
-                  />
-                  <Image
-                    src={picture3}
-                    alt="present3"
-                    height="75"
-                    width="120"
-                  />
+                  {pictures.map((item) => (
+                    <Image
+                      key={item.alt}
+                      src={item.picture}
+                      alt={item.alt}
+                      height="75"
+                      width="120"
+                    />
+                  ))}
                 </Box>
               </Box>
             </Grid>
@@ -78,7 +123,9 @@ const Footer = () => {
               sm={6}
               md={6}
               lg={6}
-              sx={{ display: { xs: "none", sm: "none", md: 'block', lg: 'block' } }}
+              sx={{
+                display: { xs: "none", sm: "none", md: "block", lg: "block" },
+              }}
             >
               <Box sx={{ display: "flex", flexDirection: "column", gap: 3 }}>
                 <Typography component="h3" sx={{ fontWeight: 300 }}>
@@ -94,60 +141,15 @@ const Footer = () => {
                     width: "fit-content",
                   }}
                 >
-                  <Image
-                    src={instaPhoto1}
-                    alt="insta photo 1"
-                    height={50}
-                    width={70}
-                  />
-                  <Image
-                    src={instaPhoto1}
-                    alt="insta photo 1"
-                    height={50}
-                    width={70}
-                  />
-                  <Image
-                    src={instaPhoto1}
-                    alt="insta photo 1"
-                    height={50}
-                    width={70}
-                  />
-                  <Image
-                    src={instaPhoto1}
-                    alt="insta photo 1"
-                    height={50}
-                    width={70}
-                  />
-                  <Image
-                    src={instaPhoto1}
-                    alt="insta photo 1"
-                    height={50}
-                    width={70}
-                  />
-                  <Image
-                    src={instaPhoto1}
-                    alt="insta photo 1"
-                    height={50}
-                    width={70}
-                  />
-                  <Image
-                    src={instaPhoto1}
-                    alt="insta photo 1"
-                    height={50}
-                    width={70}
-                  />
-                  <Image
-                    src={instaPhoto1}
-                    alt="insta photo 1"
-                    height={50}
-                    width={70}
-                  />
-                  <Image
-                    src={instaPhoto1}
-                    alt="insta photo 1"
-                    height={50}
-                    width={70}
-                  />
+                  {instagramPictures.map((item) => (
+                    <Image
+                      key={item.alt}
+                      src={item.picture}
+                      alt={item.alt}
+                      height={50}
+                      width={70}
+                    />
+                  ))}
                 </Box>
               </Box>
             </Grid>
