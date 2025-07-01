@@ -20,7 +20,7 @@ interface Props {
 }
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Contact'];
+const navItems = ['ПРО НАС', 'КАТАЛОГ', 'КОНТАКТИ'];
 
 export default function DrawerAppBar(props: Props) {
   const { window } = props;
@@ -53,7 +53,7 @@ export default function DrawerAppBar(props: Props) {
   return (
     <Box sx={{ display: 'flex', height: 'fit-content' }}>
       <CssBaseline />
-      <AppBar component="nav" sx={{background: '#E0218A'}}>
+      <AppBar component="nav" sx={{background: '#B58DE5'}}>
         <Toolbar>
           <IconButton
             color="inherit"
