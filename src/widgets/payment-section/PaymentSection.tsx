@@ -1,16 +1,16 @@
-import SectionWrapper from "@/shared/ui/SectionWrapper";
-import PaymentCard from "./ui/PaymentCard";
-import { Box } from "@mui/material";
+import SectionWrapper from '@/shared/ui/SectionWrapper';
+import PaymentCard from './ui/PaymentCard';
+import { Box } from '@mui/material';
 
-import picture1 from "../../../public/assets/langing/pictures/1.jpg";
-import picture2 from "../../../public/assets/langing/pictures/2.jpg";
-import picture3 from "../../../public/assets/langing/pictures/3.jpg";
+import picture1 from '../../../public/assets/langing/pictures/1.jpg';
+import picture2 from '../../../public/assets/langing/pictures/2.jpg';
+import picture3 from '../../../public/assets/langing/pictures/3.jpg';
 
 const paymentCards = [
   {
     image: picture1,
-    alt: "payment",
-    number: "1",
+    alt: 'payment',
+    number: '1',
     description: `Карта Приватбанку. 100% передоплата на карту Приватбанку. У цьому
         випадку ви не оплачуєте комісію за накладений платіж. Післяплата. Ви
         можете оплатити замовлення при отриманні на пошті (накладений платіж).
@@ -20,8 +20,8 @@ const paymentCards = [
   },
   {
     image: picture2,
-    alt: "delivery",
-    number: "2",
+    alt: 'delivery',
+    number: '2',
     description: `Карта Приватбанку. 100% передоплата на карту Приватбанку. У цьому
         випадку ви не оплачуєте комісію за накладений платіж. Післяплата. Ви
         можете оплатити замовлення при отриманні на пошті (накладений платіж).
@@ -31,8 +31,8 @@ const paymentCards = [
   },
   {
     image: picture3,
-    alt: "deliver",
-    number: "3",
+    alt: 'deliver',
+    number: '3',
     description: `Карта Приватбанку. 100% передоплата на карту Приватбанку. У цьому
         випадку ви не оплачуєте комісію за накладений платіж. Післяплата. Ви
         можете оплатити замовлення при отриманні на пошті (накладений платіж).
@@ -45,7 +45,7 @@ const paymentCards = [
 const PaymentSection = () => {
   return (
     <SectionWrapper>
-      <Box sx={{ display: "flex", flexWrap: "wrap", gap: 4 }}>
+      <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 4 }}>
         {paymentCards.map((item) => (
           <PaymentCard
             key={item.alt}

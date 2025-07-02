@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -48,12 +48,13 @@ export default function Navbar(props: Props) {
     </Box>
   );
 
-  const container = window !== undefined ? () => window().document.body : undefined;
+  const container =
+    window !== undefined ? () => window().document.body : undefined;
 
   return (
     <Box sx={{ display: 'flex', height: 'fit-content' }}>
       <CssBaseline />
-      <AppBar component="nav" sx={{background: '#B58DE5'}}>
+      <AppBar component="nav" sx={{ background: '#B58DE5' }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -91,7 +92,10 @@ export default function Navbar(props: Props) {
           }}
           sx={{
             display: { xs: 'block', sm: 'none' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+            '& .MuiDrawer-paper': {
+              boxSizing: 'border-box',
+              width: drawerWidth,
+            },
           }}
         >
           {drawer}

@@ -1,7 +1,6 @@
-
-import GoodCard from "@/entities/good-card";
-import SectionWrapper from "@/shared/ui/SectionWrapper";
-import { Grid } from "@mui/material";
+import GoodCard from '@/entities/good-card';
+import SectionWrapper from '@/shared/ui/SectionWrapper';
+import { Grid } from '@mui/material';
 
 const CatalogSection = () => {
   return (

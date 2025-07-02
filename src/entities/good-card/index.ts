@@ -1,1 +1,1 @@
-export {default} from './GoodCard'
+export { default } from './GoodCard';

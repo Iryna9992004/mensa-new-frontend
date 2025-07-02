@@ -1,40 +1,40 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography } from '@mui/material';
 
-import picture1 from "../../../public/assets/langing/about/creativity.jpg";
-import picture2 from "../../../public/assets/langing/about/pleasure.jpg";
-import picture3 from "../../../public/assets/langing/about/quality.jpg";
+import picture1 from '../../../public/assets/langing/about/creativity.jpg';
+import picture2 from '../../../public/assets/langing/about/pleasure.jpg';
+import picture3 from '../../../public/assets/langing/about/quality.jpg';
 
-import AboutImage from "./ui/AboutImage";
-import BlockSeparator from "./ui/BlockSeparator";
+import AboutImage from './ui/AboutImage';
+import BlockSeparator from './ui/BlockSeparator';
 
 const aboutImages = [
   {
     picture: picture1,
-    alt: "creativity",
+    alt: 'creativity',
   },
   {
     picture: picture2,
-    alt: "pleasure",
+    alt: 'pleasure',
   },
   {
     picture: picture3,
-    alt: "quality",
+    alt: 'quality',
   },
 ];
 
 const AboutSection = () => {
   return (
-    <Box sx={{ display: "flex", flexDirection: "column", gap: 4 }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
       <Box
         sx={{
-          pt: { xs: "3rem", sm: "3rem", md: "3rem", lg: "4rem" },
-          pl: { xs: "3rem", sm: 0, md: "6rem", lg: "7rem" },
-          pr: { xs: "3rem", sm: 0, md: "6rem", lg: "7rem" },
+          pt: { xs: '3rem', sm: '3rem', md: '3rem', lg: '4rem' },
+          pl: { xs: '3rem', sm: 0, md: '6rem', lg: '7rem' },
+          pr: { xs: '3rem', sm: 0, md: '6rem', lg: '7rem' },
         }}
       >
         <Typography
           component="div"
-          sx={{ textAlign: "center", color: "gray", mb: "2rem" }}
+          sx={{ textAlign: 'center', color: 'gray', mb: '2rem' }}
         >
           Різьблені свічки ручної роботи, які можуть стати оригінальним
           подарунком на Новий рік, Різдво, День Святого Валентина, День
@@ -44,11 +44,11 @@ const AboutSection = () => {
 
         <Box
           sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: "1rem",
-            flexDirection: { xs: "column", sm: "column", md: "row", lg: "row" },
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: '1rem',
+            flexDirection: { xs: 'column', sm: 'column', md: 'row', lg: 'row' },
           }}
         >
           {aboutImages.map((item) => (

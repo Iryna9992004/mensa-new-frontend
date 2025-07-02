@@ -1,63 +1,63 @@
-import { Box, Grid, Typography } from "@mui/material";
-import Image from "next/image";
+import { Box, Grid, Typography } from '@mui/material';
+import Image from 'next/image';
 
-import picture1 from "../../../public/assets/langing/pictures/1.jpg";
-import picture2 from "../../../public/assets/langing/pictures/2.jpg";
-import picture3 from "../../../public/assets/langing/pictures/3.jpg";
+import picture1 from '../../../public/assets/langing/pictures/1.jpg';
+import picture2 from '../../../public/assets/langing/pictures/2.jpg';
+import picture3 from '../../../public/assets/langing/pictures/3.jpg';
 
-import instaPhoto1 from "../../../public/assets/langing/instagram/1 (1).jpg";
+import instaPhoto1 from '../../../public/assets/langing/instagram/1 (1).jpg';
 
 const pictures = [
   {
     picture: picture1,
-    alt: "picture 1",
+    alt: 'picture 1',
   },
   {
     picture: picture2,
-    alt: "picture 2",
+    alt: 'picture 2',
   },
   {
     picture: picture3,
-    alt: "picture 3",
+    alt: 'picture 3',
   },
 ];
 
 const instagramPictures = [
   {
     picture: instaPhoto1,
-    alt: "insta photo 1",
+    alt: 'insta photo 1',
   },
   {
     picture: instaPhoto1,
-    alt: "insta photo 2",
+    alt: 'insta photo 2',
   },
   {
     picture: instaPhoto1,
-    alt: "insta photo 3",
+    alt: 'insta photo 3',
   },
   {
     picture: instaPhoto1,
-    alt: "insta photo 4",
+    alt: 'insta photo 4',
   },
   {
     picture: instaPhoto1,
-    alt: "insta photo 5",
+    alt: 'insta photo 5',
   },
   {
     picture: instaPhoto1,
-    alt: "insta photo 6",
+    alt: 'insta photo 6',
   },
   {
     picture: instaPhoto1,
-    alt: "insta photo 7",
+    alt: 'insta photo 7',
   },
   {
     picture: instaPhoto1,
-    alt: "insta photo 8",
+    alt: 'insta photo 8',
   },
   {
     picture: instaPhoto1,
-    alt: "insta photo 9",
+    alt: 'insta photo 9',
   },
 ];
 
@@ -65,11 +65,11 @@ const Footer = () => {
   return (
     <Box
       sx={{
-        background: "#F5F5F5",
-        pt: "2rem",
-        pb: "4rem",
-        pl: "5rem",
-        pr: "5rem",
+        background: '#F5F5F5',
+        pt: '2rem',
+        pb: '4rem',
+        pl: '5rem',
+        pr: '5rem',
       }}
     >
       <Grid container columnSpacing={4}>
@@ -79,16 +79,16 @@ const Footer = () => {
           sm={6}
           md={6}
           lg={6}
-          sx={{ pb: "2rem", borderBottom: "1px solid lightgray" }}
+          sx={{ pb: '2rem', borderBottom: '1px solid lightgray' }}
         >
           <Typography
             component="h3"
             variant="h3"
-            sx={{ color: "gray", fontWeight: "600", mb: "2rem" }}
+            sx={{ color: 'gray', fontWeight: '600', mb: '2rem' }}
           >
             Mensa Candle
           </Typography>
-          <Typography component="span" variant="body1" sx={{ color: "gray" }}>
+          <Typography component="span" variant="body1" sx={{ color: 'gray' }}>
             097 383 88 66 – Марина(для переписки є вайбер) ; локація – Львів.
             Термін виконання замовлення 3-4 дні з урахуванням ваших побажань
             щодо кольорової гами. Відправка по всій Україні Нова пошта,
@@ -98,12 +98,12 @@ const Footer = () => {
         <Grid item xs={6} sm={6} md={6} lg={6}>
           <Grid container>
             <Grid item xs={12} sm={12} md={6} lg={6}>
-              <Box sx={{ display: "flex", flexDirection: "column", gap: 3 }}>
+              <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
                 <Typography component="h3" sx={{ fontWeight: 300 }}>
                   PICTURES
                 </Typography>
                 <Box
-                  sx={{ display: "flex", flexDirection: "column", gap: "1rem" }}
+                  sx={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}
                 >
                   {pictures.map((item) => (
                     <Image
@@ -124,21 +124,21 @@ const Footer = () => {
               md={6}
               lg={6}
               sx={{
-                display: { xs: "none", sm: "none", md: "block", lg: "block" },
+                display: { xs: 'none', sm: 'none', md: 'block', lg: 'block' },
               }}
             >
-              <Box sx={{ display: "flex", flexDirection: "column", gap: 3 }}>
+              <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
                 <Typography component="h3" sx={{ fontWeight: 300 }}>
                   INSTAGRAM
                 </Typography>
 
                 <Box
                   sx={{
-                    display: "grid",
-                    gridTemplateColumns: "1fr 1fr 1fr",
-                    rowGap: "1px",
-                    columnGap: "1px",
-                    width: "fit-content",
+                    display: 'grid',
+                    gridTemplateColumns: '1fr 1fr 1fr',
+                    rowGap: '1px',
+                    columnGap: '1px',
+                    width: 'fit-content',
                   }}
                 >
                   {instagramPictures.map((item) => (
