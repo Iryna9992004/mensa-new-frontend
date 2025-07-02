@@ -6,6 +6,7 @@ import { instagramPictures } from './constants/instagram-pictures';
 const Footer = () => {
   return (
     <Box
+      id="contacts"
       sx={{
         background: '#F5F5F5',
         pt: '2rem',

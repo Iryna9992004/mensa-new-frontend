@@ -6,7 +6,11 @@ import { aboutImages } from './constants/about-images';
 
 const AboutSection = () => {
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+    <Box
+      id="about"
+      component="section"
+      sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}
+    >
       <Box
         sx={{
           pt: { xs: '3rem', sm: '3rem', md: '3rem', lg: '4rem' },

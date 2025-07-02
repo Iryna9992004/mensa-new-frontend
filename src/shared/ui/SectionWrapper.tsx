@@ -8,6 +8,7 @@ type Props = {
 const SectionWrapper = ({ children }: Props) => {
   return (
     <Box
+      component="section"
       sx={{
         display: 'flex',
         alignItems: 'center',

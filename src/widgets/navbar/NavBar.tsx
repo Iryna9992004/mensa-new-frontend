@@ -15,6 +15,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { navItems } from './constants/nav-items';
+import Link from 'next/link';
 
 interface Props {
   window?: () => Window;
@@ -38,10 +39,12 @@ export default function Navbar(props: Props) {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
+          <ListItem key={item.href} disablePadding>
+            <Link href={`#${item.href}`}>
+              <ListItemButton sx={{ textAlign: 'center' }}>
+                <ListItemText primary={item.value} />
+              </ListItemButton>
+            </Link>
           </ListItem>
         ))}
       </List>
@@ -74,9 +77,9 @@ export default function Navbar(props: Props) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
-                {item}
-              </Button>
+              <Link href={`#${item.href}`} key={item.href}>
+                <Button sx={{ color: '#fff' }}>{item.value}</Button>
+              </Link>
             ))}
           </Box>
         </Toolbar>
