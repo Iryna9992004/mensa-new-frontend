@@ -1,15 +1,23 @@
-import AboutSection from "@/widgets/about-section/AboutSection";
-import CatalogSection from "@/widgets/catalog-section/CatalogSection";
-import Footer from "@/widgets/footer/Footer";
-import NavBar from "@/widgets/navbar/NavBar";
-import PaymentSection from "@/widgets/payment-section/PaymentSection";
+
+import AboutSection from "@/widgets/about-section";
+import CatalogSection from "@/widgets/catalog-section";
+import Footer from "@/widgets/footer";
+import Navbar from "@/widgets/navbar";
+import PaymentSection from "@/widgets/payment-section";
 import { Box, Typography } from "@mui/material";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Landing Page",
+  description: "Landing page metadata",
+};
+
 
 export default function Home() {
   return (
     <Box sx={{ height: "fit-content" }}>
       <Box sx={{ height: "100vh", width: "100vw" }}>
-        <NavBar />
+        <Navbar />
         <Box
           component="section"
           sx={{

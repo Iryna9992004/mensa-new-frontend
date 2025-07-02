@@ -1,4 +1,5 @@
-import GoodCard from "@/entities/good-card/GoodCard";
+
+import GoodCard from "@/entities/good-card";
 import SectionWrapper from "@/shared/ui/SectionWrapper";
 import { Grid } from "@mui/material";
 

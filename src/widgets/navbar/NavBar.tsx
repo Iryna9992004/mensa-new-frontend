@@ -22,7 +22,7 @@ interface Props {
 const drawerWidth = 240;
 const navItems = ['ПРО НАС', 'КАТАЛОГ', 'КОНТАКТИ'];
 
-export default function DrawerAppBar(props: Props) {
+export default function Navbar(props: Props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
