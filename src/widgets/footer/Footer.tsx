@@ -1,65 +1,7 @@
 import { Box, Grid, Typography } from '@mui/material';
 import Image from 'next/image';
-
-import picture1 from '../../../public/assets/langing/pictures/1.jpg';
-import picture2 from '../../../public/assets/langing/pictures/2.jpg';
-import picture3 from '../../../public/assets/langing/pictures/3.jpg';
-
-import instaPhoto1 from '../../../public/assets/langing/instagram/1 (1).jpg';
-
-const pictures = [
-  {
-    picture: picture1,
-    alt: 'picture 1',
-  },
-  {
-    picture: picture2,
-    alt: 'picture 2',
-  },
-  {
-    picture: picture3,
-    alt: 'picture 3',
-  },
-];
-
-const instagramPictures = [
-  {
-    picture: instaPhoto1,
-    alt: 'insta photo 1',
-  },
-  {
-    picture: instaPhoto1,
-    alt: 'insta photo 2',
-  },
-  {
-    picture: instaPhoto1,
-    alt: 'insta photo 3',
-  },
-  {
-    picture: instaPhoto1,
-    alt: 'insta photo 4',
-  },
-  {
-    picture: instaPhoto1,
-    alt: 'insta photo 5',
-  },
-  {
-    picture: instaPhoto1,
-    alt: 'insta photo 6',
-  },
-  {
-    picture: instaPhoto1,
-    alt: 'insta photo 7',
-  },
-  {
-    picture: instaPhoto1,
-    alt: 'insta photo 8',
-  },
-  {
-    picture: instaPhoto1,
-    alt: 'insta photo 9',
-  },
-];
+import { pictures } from './constants/pictures';
+import { instagramPictures } from './constants/instagram-pictures';
 
 const Footer = () => {
   return (
