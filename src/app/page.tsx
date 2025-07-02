@@ -28,7 +28,7 @@ export default function Home() {
           }}
         >
           <Typography
-            variant="h1"
+            variant="h2"
             sx={{ fontWeight: 500, color: 'white', textAlign: 'center' }}
           >
             MENSA CANDLES
