@@ -18,8 +18,8 @@ const Footer = () => {
       <Grid container columnSpacing={4}>
         <Grid
           item
-          xs={6}
-          sm={6}
+          xs={12}
+          sm={12}
           md={6}
           lg={6}
           sx={{ pb: '2rem', borderBottom: '1px solid lightgray' }}
@@ -38,7 +38,7 @@ const Footer = () => {
             укрпошта.
           </Typography>
         </Grid>
-        <Grid item xs={6} sm={6} md={6} lg={6}>
+        <Grid item xs={12} sm={12} md={6} lg={6}>
           <Grid container>
             <Grid item xs={12} sm={12} md={6} lg={6}>
               <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
